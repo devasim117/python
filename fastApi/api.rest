@@ -1,0 +1,33 @@
+# Fetch User list
+GET http://localhost:8000/users
+
+###
+# Fetch a User
+GET http://localhost:8000/user/2
+
+###
+# Create a User
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "John Doe",
+    "email": "john.doe@gmail.com"
+}
+
+###
+# Update a User
+PUT http://localhost:8000/user/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Mohd Asim",
+    "email": "mohd.asim@gmail.com"
+}
+
+###
+# Delet a User
+DELETE http://localhost:8000/user/2
+
